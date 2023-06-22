@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing : Add Product</title>
+
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/addProduct.css">
+    <link rel="stylesheet" href="../css/nav.css">
+
+</head>
+<body>
+
+    <img src="../img/loader.gif" class="loader" alt="">
+
+    <div class="alert-box">
+        <img src="../img/error.png" class="alert-img" alt="">
+        <p class="alert-msg"></p>
+    </div>
+
+    <a class="link-home" onclick="location.href='http://localhost:3000/'">
+        <span id="title">
+            Vitamin Shop
+        </span>
+    </a>
+
+    <div class="form">
+        <!-- product image -->
+        <div class="product-info">
+            <div class="product-img"><p class="text"></p></div>
+            <div class="upload-image-sec">
+                <!-- upload inputs -->
+                <p class="text"><img src="../img/pngwing.com.png" id="photo" alt="">upload image</p>
+                <div class="upload-catalouge">
+                    <input type="file" class="fileupload" id="first-file-upload-btn" hidden>
+                    <label for="first-file-upload-btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="second-file-upload-btn" hidden>
+                    <label for="second-file-upload-btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="third-file-upload-btn" hidden>
+                    <label for="third-file-upload-btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="fourth-file-upload-btn" hidden>
+                    <label for="fourth-file-upload-btn" class="upload-image"></label>
+                </div>
+            </div>
+            <div class="select-sizes">
+                <p class="text">Tablets</p>
+                <div class="sizes">
+                    <input type="checkbox" class="size-checkbox" id="xs" value="10">
+                    <input type="checkbox" class="size-checkbox" id="s" value="30">
+                    <input type="checkbox" class="size-checkbox" id="m" value="60">
+                    <input type="checkbox" class="size-checkbox" id="l" value="120">
+                    <input type="checkbox" class="size-checkbox" id="xl" value="270">
+                    <input type="checkbox" class="size-checkbox" id="xxl" value="360">
+                    <input type="checkbox" class="size-checkbox" id="xxxl" value="500">
+                </div>
+            </div>
+        </div>
+        
+        <input type="text" id="product-name" placeholder="product name">
+        <input type="text" id="short-des" placeholder="short line about the product">
+        <textarea id="des" placeholder="detail description"></textarea>
+
+        <div class="product-price">
+            <input type="number" id="actual-price" placeholder="full price">
+            <input type="number" id="discount" placeholder="discount(optional)">
+            <input type="number" id="sell-price" placeholder="final price">
+        </div>
+
+        <input type="number" id="stock" min="20" placeholder="Total items in stock">
+
+        <textarea id="tags" placeholder="Add product tags, ex Vitamin C, Vitamin D, Caffeine)"></textarea>
+
+        <input type="checkbox" class="checkbox" id="tac" checked>
+        <label for="tac">clothing take 30% from your total sell</label>
+
+        <div class="buttons">
+            <button class="btn" id="add-btn">add product</button>
+            <button class="btn" id="save-btn">save draft</button>
+            <a onclick="location.href='http://localhost:3000/seller'" <button class="btn" id="cancel-btn">cancel</button></a>
+        </div>
+    </div>
+
+    <script src="../js/token.js"></script>
+    <script src="../js/addProduct.js"></script>
+    
+</body>
+</html>

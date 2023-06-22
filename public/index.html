@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShop</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <nav class="navBar"></nav>
+        
+
+    <!-- hero-section -->
+    <header class="hero-section">
+        <div class="content">
+            <!-- <img src="img/unnamed.png" class="logo" alt="">
+            <p class="sub-heading">high quality  gym equipment</p> -->
+        </div>
+    </header>
+
+    <section id="men-tshirt-products"></section>
+
+    <!-- collections -->
+    <section class="collection-container">
+        <a href="#" class="collection" >
+            <img src="img/strong-man-in-the-gym-exercising-royalty-free-image-919785980-1557429831.jpg" alt="">
+            <p class="collection-title">Weights</p>
+        </a>
+        <a href="#" class="collection" >
+            <img src="img/2020_07_15_prismlaunch_female_running_3quarter_0032_1_2560x1707.jpeg" alt="">
+            <p class="collection-title">Cardio</p>
+        </a>
+        <a href="#" class="collection" >
+            <img src="img/14TUSCF002_2.jpg" alt="">
+            <p class="collection-title">Accessories</p>
+        </a>
+    </section>
+
+    <section id="men-tshirt-products-2"></section>
+
+    <footer></footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/footer.js"></script>
+
+
+    <script>
+        getProducts('man').then(data => createProductSlider(data, '#men-tshirt-products', 'Men T-shirt'))
+        getProducts('man').then(data => createProductSlider(data, '#men-tshirt-products-2', 'suck'))
+    </script>
+</body>
+</html>
